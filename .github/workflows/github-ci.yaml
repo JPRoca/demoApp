@@ -20,6 +20,7 @@ jobs:
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
     secrets:
-      shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
+      shamanops_customer_id: ${{secrets.shamanops_customer_id}}
+      shamanops_customer_token: ${{secrets.shamanops_customer_token}}
 ##################################################################################################
 ##################################################################################################
