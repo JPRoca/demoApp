@@ -3,19 +3,11 @@
 ###################################################################################################
 name: ShamanOps
 on:
-  workflow_call:
-    secrets:
-      shamanops_customer_token:
-        required: true
   push:
     branches: [ "main" ]
-env:
-  shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
 jobs:
-
   shamanops:
     uses: shamanops/resources/.github/workflows/base-cloud-stable.yaml@main
-
     with:
     ## Environments:
     ## full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
@@ -27,6 +19,5 @@ jobs:
       shamanopsTechnicalApprovers: 'user2@customer.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      shamanops_customer_token: ${{ env.shamanops_customer_token }}
 ##################################################################################################
 ##################################################################################################
