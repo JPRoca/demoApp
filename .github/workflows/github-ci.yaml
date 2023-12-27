@@ -23,6 +23,6 @@ jobs:
       shamanopsTechnicalApprovers: 'user2@customer.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      shamanops_customer_token: ${{secrets.shamanops_customer_token}}
+      shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
 ##################################################################################################
 ##################################################################################################
