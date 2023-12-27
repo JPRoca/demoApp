@@ -1,4 +1,4 @@
-# Start from the alpine golang base imagessss
+# Start from the alpine golang base imagesssss
 FROM docker.io/library/golang:alpine
 ARG token
 # Set the Current Working Directory inside the container
