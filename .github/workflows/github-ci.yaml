@@ -3,6 +3,10 @@
 ###################################################################################################
 name: ShamanOps
 on:
+  workflow_call:
+    secrets:
+      shamanops_customer_token:
+        required: true
   push:
     branches: [ "main" ]
 jobs:
