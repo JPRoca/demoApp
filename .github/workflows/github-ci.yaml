@@ -22,5 +22,7 @@ jobs:
       shamanopsTechnicalApproversMinimalProd: '1'
     # Verbosity level
       log_level: 'normal'
+    # Tokens
+      shamanops_customer_token: 'Shamanops-3e8009a2b127391460071a10bb4d314be7f87b452a461c589edc4f2cc19abe48'
 ##################################################################################################
 ##################################################################################################
