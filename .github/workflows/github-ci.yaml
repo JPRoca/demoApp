@@ -10,18 +10,22 @@ jobs:
   shamanops:
     uses: shamanops/resources/.github/workflows/base-cloud-rc.yaml@main
     with:
-    ## Environments:
-    ## full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
+    ###################################################################################################
+    # Customer Customizations:
+    ###################################################################################################
+    #- Environments:
+    #- full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
       environments: 'full'
-    # Project
+    #- Project
       projectName: "examples"
-    # Approvals
+    #- Approvals
       shamanopsBusinessApprovers: 'user1@customer.com'
       shamanopsTechnicalApprovers: 'user2@customer.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-    # Verbosity level
+    #- Verbosity level
       log_level: 'normal'
+    ###################################################################################################
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
       shamanops_argocd_dev_token: ${{ secrets.shamanops_argocd_dev_token }}
