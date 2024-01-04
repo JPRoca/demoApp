@@ -22,5 +22,7 @@ jobs:
       shamanopsTechnicalApproversMinimalProd: '1'
     # Verbosity level
       log_level: 'debug'
+    secrets:
+      shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
 ##################################################################################################
 ##################################################################################################
