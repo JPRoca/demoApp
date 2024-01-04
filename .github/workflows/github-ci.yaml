@@ -23,6 +23,6 @@ jobs:
     # Verbosity level
       log_level: 'normal'
     # Tokens
-      shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
+      customer_token: ${{ secrets.shamanops_customer_token }}
 ##################################################################################################
 ##################################################################################################
