@@ -23,6 +23,8 @@ jobs:
       shamanopsTechnicalApprovers: 'user2@customer.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+    # Verbosity level
+      log_level: 'debug'
     ###################################################################################################
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
